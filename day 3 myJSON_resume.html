@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let myResume =
+        {
+            Basics: {
+                        name: "Dhejonithan",
+                        email: "dhejo@abc.com",
+                        mobile: 123456789,
+                        address: "No.12, RA Puram, Coimbatore - 458785." 
+                      } ,
+            Education:{
+                        institution: "ABC college of engineering",
+                        year: 1985,
+                        course: "Comuter science engineering"
+                     } ,
+            skills: {
+                       C:{  
+                            name: "C language",
+                            level: "3 of 5"   
+                         } ,
+                    Cpp:{ 
+                            name: "C++ language",
+                            level: "3 of 5"   
+                         } ,
+            javaScript :{ 
+                            name: "Javascript language",
+                            level: "1 of 5"   
+                         }                     
+                    }
+    
+        }
+       // console.log(myResume)
+        let myJSONResume = JSON.stringify(myResume)
+         console.log(myJSONResume)
+    </script>
+</body>
+</html>

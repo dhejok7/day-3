@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let jsondata = [
+        {
+          name: "Afghanistan",
+          capital: "Kabul",
+          subregion: "Southern Asia",
+          region: "Asia",
+          population: 40218234,
+          flag: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+          independent: true,
+        },
+      ];
+      console.log("***************");
+      console.log("For in loop ");
+      console.log("***************");
+      for (i in jsondata) {
+        console.log("name: " + jsondata[i].name);
+        console.log("capital: " + jsondata[i].capital);
+        console.log("subregion: " + jsondata[i].subregion);
+        console.log("region: " + jsondata[i].region);
+        console.log("population: " + jsondata[i].population);
+        console.log("flag: " + jsondata[i].flag);
+        console.log("independent: " + jsondata[i].independent);
+        console.log("");
+      }
+      console.log("***************");
+      console.log("ForEach loop ");
+      console.log("***************");
+      jsondata.forEach((value) => console.log(value));
+      console.log("***************");
+      console.log("For of loop ");
+      console.log("***************");
+      for (i of jsondata) {
+        console.log(i);
+      }
+      console.log("***************");
+      console.log("For loop ");
+      console.log("***************");
+      for (let i = 0; i < jsondata.length; i++) {
+        console.log(jsondata[i]);
+      }
+    </script>
+  </body>
+</html>
